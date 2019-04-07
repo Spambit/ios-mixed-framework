@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CB1356C2259C4D7006B05A1 /* MixFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1356B2259C4D7006B05A1 /* MixFrameworkTests.m */; };
+		3CB1356E2259C4D7006B05A1 /* MixFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFC23D0224FFE8900BFD2CD /* MixFramework.framework */; };
+		3CB135752259C551006B05A1 /* TestObjCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC23DC224FFF9900BFD2CD /* TestObjCClass.m */; };
+		3CB135762259C555006B05A1 /* TestCppClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC23E92250085C00BFD2CD /* TestCppClass.mm */; };
+		3CB135772259C559006B05A1 /* PrivateCppClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC23ED2250098E00BFD2CD /* PrivateCppClass.cpp */; };
+		3CB1357B2259CB1F006B05A1 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1357A2259CB1F006B05A1 /* Test.swift */; };
 		3CFC23D5224FFE8900BFD2CD /* MixFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC23D3224FFE8900BFD2CD /* MixFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CFC23DD224FFF9900BFD2CD /* TestObjCClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC23DB224FFF9900BFD2CD /* TestObjCClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CFC23DE224FFF9900BFD2CD /* TestObjCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC23DC224FFF9900BFD2CD /* TestObjCClass.m */; };
@@ -17,8 +23,24 @@
 		3CFC23F02250098E00BFD2CD /* PrivateCppClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC23EE2250098E00BFD2CD /* PrivateCppClass.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3CB1356F2259C4D7006B05A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CFC23C7224FFE8900BFD2CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CFC23CF224FFE8900BFD2CD;
+			remoteInfo = MixFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3C66E34C2250763000375832 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3CB1356122595187006B05A1 /* MixFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MixFramework copy-Info.plist"; path = "/Users/ssarkar/Documents/Hyland/MyMixFrameworkDemo/ios-mixed-framework/MixFramework/MixFramework copy-Info.plist"; sourceTree = "<absolute>"; };
+		3CB135692259C4D7006B05A1 /* MixFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB1356B2259C4D7006B05A1 /* MixFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixFrameworkTests.m; sourceTree = "<group>"; };
+		3CB1356D2259C4D7006B05A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB135792259CB1F006B05A1 /* MixFrameworkTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixFrameworkTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		3CB1357A2259CB1F006B05A1 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3CFC23D0224FFE8900BFD2CD /* MixFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MixFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFC23D3224FFE8900BFD2CD /* MixFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixFramework.h; sourceTree = "<group>"; };
 		3CFC23D4224FFE8900BFD2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +54,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3CB135662259C4D7006B05A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB1356E2259C4D7006B05A1 /* MixFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CFC23CD224FFE8900BFD2CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,12 +72,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CB1356A2259C4D7006B05A1 /* MixFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CB1356B2259C4D7006B05A1 /* MixFrameworkTests.m */,
+				3CB1356D2259C4D7006B05A1 /* Info.plist */,
+				3CB1357A2259CB1F006B05A1 /* Test.swift */,
+				3CB135792259CB1F006B05A1 /* MixFrameworkTests-Bridging-Header.h */,
+			);
+			path = MixFrameworkTests;
+			sourceTree = "<group>";
+		};
 		3CFC23C6224FFE8900BFD2CD = {
 			isa = PBXGroup;
 			children = (
 				3C66E34C2250763000375832 /* module.modulemap */,
 				3CFC23D2224FFE8900BFD2CD /* MixFramework */,
+				3CB1356A2259C4D7006B05A1 /* MixFrameworkTests */,
 				3CFC23D1224FFE8900BFD2CD /* Products */,
+				3CB1356122595187006B05A1 /* MixFramework copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3CFC23D0224FFE8900BFD2CD /* MixFramework.framework */,
+				3CB135692259C4D7006B05A1 /* MixFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +136,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3CB135682259C4D7006B05A1 /* MixFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB135712259C4D7006B05A1 /* Build configuration list for PBXNativeTarget "MixFrameworkTests" */;
+			buildPhases = (
+				3CB135652259C4D7006B05A1 /* Sources */,
+				3CB135662259C4D7006B05A1 /* Frameworks */,
+				3CB135672259C4D7006B05A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CB135702259C4D7006B05A1 /* PBXTargetDependency */,
+			);
+			name = MixFrameworkTests;
+			productName = MixFrameworkTests;
+			productReference = 3CB135692259C4D7006B05A1 /* MixFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3CFC23CF224FFE8900BFD2CD /* MixFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CFC23D8224FFE8900BFD2CD /* Build configuration list for PBXNativeTarget "MixFramework" */;
@@ -119,6 +181,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Sambit Sarkar";
 				TargetAttributes = {
+					3CB135682259C4D7006B05A1 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
 					3CFC23CF224FFE8900BFD2CD = {
 						CreatedOnToolsVersion = 10.2;
 						LastSwiftMigration = 1020;
@@ -138,11 +204,19 @@
 			projectRoot = "";
 			targets = (
 				3CFC23CF224FFE8900BFD2CD /* MixFramework */,
+				3CB135682259C4D7006B05A1 /* MixFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3CB135672259C4D7006B05A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CFC23CE224FFE8900BFD2CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +227,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3CB135652259C4D7006B05A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB135762259C555006B05A1 /* TestCppClass.mm in Sources */,
+				3CB135752259C551006B05A1 /* TestObjCClass.m in Sources */,
+				3CB1357B2259CB1F006B05A1 /* Test.swift in Sources */,
+				3CB135772259C559006B05A1 /* PrivateCppClass.cpp in Sources */,
+				3CB1356C2259C4D7006B05A1 /* MixFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CFC23CC224FFE8900BFD2CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,7 +252,56 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3CB135702259C4D7006B05A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CFC23CF224FFE8900BFD2CD /* MixFramework */;
+			targetProxy = 3CB1356F2259C4D7006B05A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		3CB135722259C4D7006B05A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MixFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spambit.www.MixFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixFrameworkTests/MixFrameworkTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CB135732259C4D7006B05A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MixFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spambit.www.MixFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixFrameworkTests/MixFrameworkTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3CFC23D6224FFE8900BFD2CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -347,6 +482,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3CB135712259C4D7006B05A1 /* Build configuration list for PBXNativeTarget "MixFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB135722259C4D7006B05A1 /* Debug */,
+				3CB135732259C4D7006B05A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3CFC23CA224FFE8900BFD2CD /* Build configuration list for PBXProject "MixFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
