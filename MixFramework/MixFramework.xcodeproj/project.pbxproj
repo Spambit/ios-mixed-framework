@@ -13,6 +13,8 @@
 		3CB135762259C555006B05A1 /* TestCppClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC23E92250085C00BFD2CD /* TestCppClass.mm */; };
 		3CB135772259C559006B05A1 /* PrivateCppClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC23ED2250098E00BFD2CD /* PrivateCppClass.cpp */; };
 		3CB1357B2259CB1F006B05A1 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1357A2259CB1F006B05A1 /* Test.swift */; };
+		3CF8CAFD2260A31300F4C8F4 /* DerivedTestObjcClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CF8CAFB2260A31300F4C8F4 /* DerivedTestObjcClass.h */; };
+		3CF8CAFE2260A31300F4C8F4 /* DerivedTestObjcClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8CAFC2260A31300F4C8F4 /* DerivedTestObjcClass.m */; };
 		3CFC23D5224FFE8900BFD2CD /* MixFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC23D3224FFE8900BFD2CD /* MixFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CFC23DD224FFF9900BFD2CD /* TestObjCClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC23DB224FFF9900BFD2CD /* TestObjCClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CFC23DE224FFF9900BFD2CD /* TestObjCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC23DC224FFF9900BFD2CD /* TestObjCClass.m */; };
@@ -41,6 +43,8 @@
 		3CB1356D2259C4D7006B05A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CB135792259CB1F006B05A1 /* MixFrameworkTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixFrameworkTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		3CB1357A2259CB1F006B05A1 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		3CF8CAFB2260A31300F4C8F4 /* DerivedTestObjcClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DerivedTestObjcClass.h; sourceTree = "<group>"; };
+		3CF8CAFC2260A31300F4C8F4 /* DerivedTestObjcClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DerivedTestObjcClass.m; sourceTree = "<group>"; };
 		3CFC23D0224FFE8900BFD2CD /* MixFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MixFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFC23D3224FFE8900BFD2CD /* MixFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixFramework.h; sourceTree = "<group>"; };
 		3CFC23D4224FFE8900BFD2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				3CFC23E72250055700BFD2CD /* TestSwiftClass.swift */,
 				3CFC23ED2250098E00BFD2CD /* PrivateCppClass.cpp */,
 				3CFC23EE2250098E00BFD2CD /* PrivateCppClass.h */,
+				3CF8CAFB2260A31300F4C8F4 /* DerivedTestObjcClass.h */,
+				3CF8CAFC2260A31300F4C8F4 /* DerivedTestObjcClass.m */,
 			);
 			path = MixFramework;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFC23D5224FFE8900BFD2CD /* MixFramework.h in Headers */,
+				3CF8CAFD2260A31300F4C8F4 /* DerivedTestObjcClass.h in Headers */,
 				3CFC23F02250098E00BFD2CD /* PrivateCppClass.h in Headers */,
 				3CFC23DD224FFF9900BFD2CD /* TestObjCClass.h in Headers */,
 				3CFC23EC2250085C00BFD2CD /* TestCppClass.h in Headers */,
@@ -244,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFC23EF2250098E00BFD2CD /* PrivateCppClass.cpp in Sources */,
+				3CF8CAFE2260A31300F4C8F4 /* DerivedTestObjcClass.m in Sources */,
 				3CFC23E82250055700BFD2CD /* TestSwiftClass.swift in Sources */,
 				3CFC23EB2250085C00BFD2CD /* TestCppClass.mm in Sources */,
 				3CFC23DE224FFF9900BFD2CD /* TestObjCClass.m in Sources */,
