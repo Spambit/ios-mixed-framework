@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C88D0C622ED9369000F76FB /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88D0C522ED9369000F76FB /* A.swift */; };
 		3CFC24002250125700BFD2CD /* PlainObjCFwk.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC23FE2250125700BFD2CD /* PlainObjCFwk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CFC24082250129600BFD2CD /* PlainObjCFwkClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFC24062250129600BFD2CD /* PlainObjCFwkClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CFC24092250129600BFD2CD /* PlainObjCFwkClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC24072250129600BFD2CD /* PlainObjCFwkClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C88D0C522ED9369000F76FB /* A.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
 		3CFC23FB2250125700BFD2CD /* PlainObjCFwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlainObjCFwk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFC23FE2250125700BFD2CD /* PlainObjCFwk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlainObjCFwk.h; sourceTree = "<group>"; };
 		3CFC23FF2250125700BFD2CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		3CFC23FD2250125700BFD2CD /* PlainObjCFwk */ = {
 			isa = PBXGroup;
 			children = (
+				3C88D0C522ED9369000F76FB /* A.swift */,
 				3CFC23FE2250125700BFD2CD /* PlainObjCFwk.h */,
 				3CFC23FF2250125700BFD2CD /* Info.plist */,
 				3CFC24062250129600BFD2CD /* PlainObjCFwkClass.h */,
@@ -102,6 +105,7 @@
 				TargetAttributes = {
 					3CFC23FA2250125700BFD2CD = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -138,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFC24092250129600BFD2CD /* PlainObjCFwkClass.m in Sources */,
+				3C88D0C622ED9369000F76FB /* A.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +270,7 @@
 		3CFC24042250125700BFD2CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -281,6 +287,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spambit.www.PlainObjCFwk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -288,6 +296,7 @@
 		3CFC24052250125700BFD2CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -304,6 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spambit.www.PlainObjCFwk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
