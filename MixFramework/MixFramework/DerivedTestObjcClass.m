@@ -9,5 +9,8 @@
 #import "DerivedTestObjcClass.h"
 
 @implementation DerivedTestObjcClass
-
+-(void) test {
+    [[A new] test];
+    [PlainObjCFwkClass new];
+}
 @end

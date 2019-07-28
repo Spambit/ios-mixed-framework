@@ -6,7 +6,6 @@
 //  Copyright © 2019 Sambit Sarkar. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-
 @interface PrintCppLog : NSObject
 - (void) log;
 @end

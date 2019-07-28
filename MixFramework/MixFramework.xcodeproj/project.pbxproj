@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C88D0A022EB7697000F76FB /* PlainObjCFwk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C88D09F22EB7697000F76FB /* PlainObjCFwk.framework */; };
 		3CB1356C2259C4D7006B05A1 /* MixFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1356B2259C4D7006B05A1 /* MixFrameworkTests.m */; };
 		3CB1356E2259C4D7006B05A1 /* MixFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFC23D0224FFE8900BFD2CD /* MixFramework.framework */; };
 		3CB135752259C551006B05A1 /* TestObjCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC23DC224FFF9900BFD2CD /* TestObjCClass.m */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		3C66E34C2250763000375832 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3C88D09F22EB7697000F76FB /* PlainObjCFwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PlainObjCFwk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB1356122595187006B05A1 /* MixFramework copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MixFramework copy-Info.plist"; path = "/Users/ssarkar/Documents/Hyland/MyMixFrameworkDemo/ios-mixed-framework/MixFramework/MixFramework copy-Info.plist"; sourceTree = "<absolute>"; };
 		3CB135692259C4D7006B05A1 /* MixFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB1356B2259C4D7006B05A1 /* MixFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixFrameworkTests.m; sourceTree = "<group>"; };
@@ -70,12 +72,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C88D0A022EB7697000F76FB /* PlainObjCFwk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C88D09E22EB7697000F76FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C88D09F22EB7697000F76FB /* PlainObjCFwk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3CB1356A2259C4D7006B05A1 /* MixFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +106,7 @@
 				3CB1356A2259C4D7006B05A1 /* MixFrameworkTests */,
 				3CFC23D1224FFE8900BFD2CD /* Products */,
 				3CB1356122595187006B05A1 /* MixFramework copy-Info.plist */,
+				3C88D09E22EB7697000F76FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -441,7 +453,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MixFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,7 +483,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MixFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,7 +7,7 @@
 //
 
 #import <MixFramework/MixFramework.h>
-
+@import PlainObjCFwk;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DerivedTestObjcClass : TestObjCClass

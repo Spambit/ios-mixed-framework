@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import PlainObjCFwk
 
-@objc public class TestSwiftClass: NSObject {
+@objc public class TestSwiftClass: PlainObjCFwkClass {
     @objc public func method() {
         NSLog("My swift method called.");
         TestObjCClass().method();
